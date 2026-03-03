@@ -1,0 +1,75 @@
+:root{
+  --bg: rgb(230, 240, 255);
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color:#111;
+  background: var(--bg);
+  transition: background 700ms ease;
+}
+
+.ui{
+  position:fixed;
+  top:16px;
+  left:16px;
+  z-index:10;
+}
+
+h1{
+  margin:0 0 10px 0;
+  font-size:28px;
+}
+
+.controls{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+input{
+  width:min(380px, 70vw);
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.2);
+  background: rgba(255,255,255,.7);
+  color:#111;
+  outline:none;
+}
+
+button{
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.25);
+  background: rgba(0,0,0,.12);
+  color:#111;
+  cursor:pointer;
+}
+
+button:hover{
+  background: rgba(0,0,0,.18);
+}
+
+.status{
+  margin:10px 0 0 0;
+  opacity:.85;
+  font-size:13px;
+}
+
+.readout{
+  position:fixed;
+  right:16px;
+  bottom:16px;
+  z-index:10;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.15);
+  background: rgba(255,255,255,.65);
+  font-size:12px;
+  line-height:1.35;
+  white-space: pre-line;
+  max-width:min(380px, 80vw);
+}
