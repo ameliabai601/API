@@ -10,6 +10,15 @@ body{
   color:#111;
   background: var(--bg);
   transition: background 700ms ease;
+
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.ui{
+  text-align:center;
 }
 
 .ui{
